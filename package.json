@@ -1,0 +1,19 @@
+{
+  "name": "moviedb-platzi",
+  "version": "1.0.0",
+  "description": "Proyecto para el Curso Práctico COnsumo API Rest con JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luciarf87/moviedb-platzi.git"
+  },
+  "author": "luciarf87",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luciarf87/moviedb-platzi/issues"
+  },
+  "homepage": "https://github.com/luciarf87/moviedb-platzi#readme"
+}
