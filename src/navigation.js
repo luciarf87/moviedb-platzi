@@ -31,7 +31,7 @@ function navigator() {
     }
     document.body.scrollTop = 0;   
     document.documentElement.scrollTop = 0;
-}
+};
 function homePage() {
     console.log('home');
 
@@ -48,7 +48,7 @@ function homePage() {
 
     getTrendingMoviesPreview();
     getCategoriesPreview();
-}
+};
 function trendsPage() {
     console.log('trends');
 
@@ -68,7 +68,7 @@ function trendsPage() {
 
     getTrendingMovies();
 
-}
+};
 function searchPage() {
     console.log('search');
 
@@ -86,7 +86,7 @@ function searchPage() {
 
     const [_, query] =  location.hash.split('='); 
     getMoviesBySearch(query);
-}
+};
 function movieDetailsPage() {
     console.log('movie');
     headerSection.classList.add('header-container--long');
@@ -101,7 +101,9 @@ function movieDetailsPage() {
     genericSection.classList.add('inactive');
     movieDetailSection.classList.remove('inactive');
     
-}
+    const [_, movieId] =  location.hash.split('='); 
+    getMovieById(movieId);
+};
 function categoriesPage() {
     console.log('categories');
 
@@ -123,4 +125,4 @@ function categoriesPage() {
     headerCategoryTitle.innerHTML = categoryName;
 
     getMoviesByCategory(categoryId);
-}
+};
